@@ -49,12 +49,7 @@ jobs:
       - name: Configure Git for Flutter
         run: |
           git config --global --add safe.directory /opt/hostedtoolcache/flutter
-      - name: Debug Working Directory
-        run: |
-          echo "Current directory:"
-          pwd
-          echo "List files:"
-          ls -la
+
       - name: Get Flutter Dependencies
         run: flutter pub get
 
@@ -153,7 +148,7 @@ jobs:
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: 'stable'
-          cache: true
+          cache: false
 
       - name: Get Flutter Dependencies
         run: flutter pub get
