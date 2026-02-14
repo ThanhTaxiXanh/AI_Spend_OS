@@ -1,0 +1,96 @@
+name: ai_spend_os
+description: AI-powered offline-first financial management system with on-device ML
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Local Database
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0+4
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # Security & Encryption
+  flutter_secure_storage: ^9.0.0
+  encrypt: ^5.0.3
+  crypto: ^3.0.3
+  
+  # ML & AI
+  tflite_flutter: ^0.10.4
+  tflite_flutter_helper: ^0.3.1
+  
+  # Voice Processing
+  speech_to_text: ^6.5.1
+  flutter_tts: ^3.8.3
+  permission_handler: ^11.1.0
+  record: ^5.0.4
+  
+  # Data Processing
+  intl: ^0.18.1
+  collection: ^1.18.0
+  
+  # Functional Programming
+  dartz: ^0.10.1
+  
+  # Dependency Injection
+  get_it: ^7.6.4
+  injectable: ^2.3.2
+  
+  # JSON Serialization
+  json_annotation: ^4.8.1
+  freezed_annotation: ^2.4.1
+  
+  # UI Components
+  fl_chart: ^0.65.0
+  flutter_slidable: ^3.0.1
+  animations: ^2.0.8
+  lottie: ^2.7.0
+  
+  # Utils
+  uuid: ^4.2.2
+  logger: ^2.0.2+1
+  equatable: ^2.0.5
+  
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Integration Testing
+  integration_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  injectable_generator: ^2.4.1
+  json_serializable: ^6.7.1
+  freezed: ^2.4.6
+  
+  # Linting
+  flutter_lints: ^3.0.1
+  
+  # Testing
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/models/
+    - assets/animations/
+    - assets/images/
+
