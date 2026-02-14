@@ -49,7 +49,12 @@ jobs:
       - name: Configure Git for Flutter
         run: |
           git config --global --add safe.directory /opt/hostedtoolcache/flutter
-
+      - name: Debug Working Directory
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "List files:"
+          ls -la
       - name: Get Flutter Dependencies
         run: flutter pub get
 
